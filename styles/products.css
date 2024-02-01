@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+:root {
+    --bg-banner: url("../images/background banner.png");
+    --primary-color: #093931;
+    --second-color: #F2C66D;
+    --title-color: #F5D38E;
+    --padding-left: 8.25rem;
+    --font-body: 'Manrope', sans-serif;
+    --font-title: 'Cormorant Garamond', serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: var(--bg-banner);
+    background-color: var(--primary-color);
+    /* padding: 0 var(--padding-left); */
+    /* padding-bottom: 8.69rem; */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 0.5rem var(--padding-left);
+    align-items: center;
+    /* padding: 0.5rem 0; */
+}
+
+.header__links {
+    list-style: none;
+    display: flex;
+    /* gap: 2.52rem; */
+}
+
+.header__links li {
+    padding: 0.65625rem 1.35188rem;
+}
+
+.header__links a {
+    font-family: var(--font-body);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.header__links .active a {
+    color: var(--second-color);
+}
+
+.header__links .active {
+    border-bottom: 4px solid var(--second-color);
+    border-radius: 0.13rem;
+    /* box-shadow: 2px 11px 0px -6px rgba(242, 198, 109, 1); */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+    height: 404px;
+    cursor: pointer;
+}
+
+.card h3{
+    font-family: var(--font-title);
+    font-size: 18px;
+}
+
+.card span{
+    font-family: var(--font-title);
+}
+
+#containerCards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
