@@ -23,7 +23,7 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
           <li><img src="../images/user.png" alt="logo usuario" /></li>
-          <li><img src="../images/Shopping cart 1.png" alt="cart" /></li>
+          <li><img id="btnCart" src="../images/Shopping cart 1.png" alt="cart" /></li>
         </ul>
         <!-- <button id="btn-mobile">
           <span class="material-symbols-outlined"> menu </span>
@@ -34,6 +34,13 @@
         <section id="containerCards"></section>
     </main>
     <footer></footer>
+    <div class="modalCart hidden">
+      <section>
+        <button id="closeModal">X</button>
+        <span>Contenido del modal</span>
+      </section>
+    </div>
+    <script src="../scripts/modalCart.js"></script>
     <script src="../scripts/product.js"></script>
   </body>
 </html>

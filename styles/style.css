@@ -107,6 +107,31 @@
     right: -25%;
 }
 
+.modalCart {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #05050549;
+    /* visibility: hidden; */
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalCart section{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
 .header__video {
     width: 100%;
     object-fit: cover;
@@ -122,6 +147,10 @@
 .header__images {
     position: relative;
 
+}
+
+#btnCart{
+    cursor: pointer;
 }
 
 #btn-mobile {
